@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-clipboard-landing-page-VXwkE7gEBa)
 - Live Site URL: [Clipboard Landing Page](https://clipboard-alejandro.netlify.app)
 
 ## My process
