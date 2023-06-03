@@ -1,0 +1,350 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.sr-only {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+  padding: 12.8rem 0;
+  background-image: url("../images/bg-header-desktop.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin-bottom: 6rem;
+}
+
+.primary-heading {
+  font-size: 4.4rem;
+  font-weight: 600;
+  color: #4c545d;
+  margin-bottom: 1.5rem;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #9fabb2;
+}
+
+.sub-primary-heading {
+  font-size: 2rem;
+  line-height: 1.5;
+  max-width: 66rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.download-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.download-link:link,
+.download-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1.6rem 3.8rem;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.download-ios:link,
+.download-ios:visited {
+  background-color: #26baa4;
+  box-shadow: 0 10px 20px 1px rgba(38, 186, 164, 0.25);
+}
+
+.download-ios:hover,
+.download-ios:active {
+  background-color: #5dccbb;
+}
+
+.download-mac:link,
+.download-mac:visited {
+  background-color: #6173ff;
+  box-shadow: 0 10px 20px 1px rgba(97, 115, 255, 0.25);
+}
+
+.download-mac:hover,
+.download-mac:active {
+  background-color: #8996ff;
+}
+
+.download-link:link::after,
+.download-link:visited::after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 5.8rem;
+  border-radius: 100px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: background-color 0.2s;
+}
+
+.download-ios:link::after,
+.download-ios:visited::after {
+  background-color: #1b9f8a;
+}
+
+.download-ios:hover::after,
+.download-ios:active::after {
+  background-color: #57b8a7;
+}
+
+.download-mac:link::after,
+.download-mac:visited::after {
+  background-color: #5161da;
+}
+
+.download-mac:hover::after,
+.download-mac:active::after {
+  background-color: #838bca;
+}
+
+/* SNIPPETS SECTION START*/
+
+.snippets-section {
+  text-align: center;
+}
+
+.secondary-heading {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #4c545d;
+  margin-bottom: 2rem;
+}
+
+.snippets-section .sub-heading {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.features-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: left;
+  margin: 8rem 0 12.8rem;
+}
+
+.features-img {
+  margin-left: -4rem;
+  justify-self: right;
+}
+
+.features {
+  list-style: none;
+  margin-top: -4rem;
+  margin-left: 12rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.tertiary-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #4c545d;
+  margin-bottom: 1rem;
+}
+
+.feature-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #9fabb2;
+  max-width: 35rem;
+}
+
+/* SNIPPLET SECTION END */
+
+/* ACCESS SECTION START */
+
+.access-section {
+  padding-top: 4rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.access-section .sub-heading {
+  max-width: 68rem;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+}
+
+/* ACCESS SECTION END */
+
+/* SUPERCHARGE SECTION START */
+
+.supercharge-section {
+  text-align: center;
+  max-width: 111rem;
+  margin: 0 auto;
+  margin-bottom: 12.8rem;
+}
+
+.supercharge-section .sub-heading {
+  margin-bottom: 8rem;
+}
+
+.section-features {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.feature-icon {
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 4rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature:nth-child(2),
+.feature:nth-child(3) {
+  margin-top: 0.8rem;
+}
+
+/* SUPERCHARGE SECTION END */
+
+/* USED BY SECTION START */
+
+.used-by-section {
+  max-width: 111rem;
+  margin: 0 auto;
+  margin-bottom: 12.8rem;
+}
+
+.company-logos-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* USED BY SECTION END */
+
+/* DOWNLOAD SECTION START */
+
+.download-section {
+  text-align: center;
+  margin-bottom: 12.8rem;
+}
+
+.download-section .sub-heading {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+/* DOWNLOAD SECTION END */
+
+/* FOOTER START */
+
+footer {
+  background-color: #f5f6f8;
+}
+
+.footer {
+  max-width: 111rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 17.5fr 50fr 32.5fr;
+}
+
+.footer .logo {
+  height: 5.6rem;
+  margin: 0;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  row-gap: 1.8rem;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #4c545d;
+  transition: color 0.2s;
+}
+
+.link:hover,
+.link:active {
+  color: #26baa4;
+}
+
+.social-links {
+  justify-self: right;
+  align-self: center;
+
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.social-icon {
+  filter: invert(32%) sepia(7%) saturate(852%) hue-rotate(169deg)
+    brightness(90%) contrast(84%);
+  transition: filter 0.2s;
+}
+
+.social-link:hover .social-icon,
+.social-link:active .social-icon {
+  filter: invert(56%) sepia(81%) saturate(390%) hue-rotate(121deg)
+    brightness(93%) contrast(88%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
